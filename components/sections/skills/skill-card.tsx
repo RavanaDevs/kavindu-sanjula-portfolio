@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
 import type { Skill } from './skills-data';
 
 interface SkillCardProps {
@@ -21,9 +20,8 @@ export function SkillCard({ skill, index }: SkillCardProps) {
       <Card className="p-6 hover:shadow-lg transition-shadow">
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-lg font-semibold">{skill.name}</h3>
-          <span className="text-sm text-muted-foreground">{skill.level}%</span>
+          <span className="text-lg font-bold text-muted-foreground">{skill.level}%</span>
         </div>
-        <Progress value={skill.level} className="mb-4" />
         <p className="text-sm text-muted-foreground">{skill.description}</p>
       </Card>
     </motion.div>

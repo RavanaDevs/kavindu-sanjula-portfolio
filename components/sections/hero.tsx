@@ -18,7 +18,7 @@ export function HeroSection() {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Hi, I'm{' '}
+              {"Hi, I'm "}
               <span className="text-primary">Kavindu Sanjula</span>
             </h1>
           </motion.div>

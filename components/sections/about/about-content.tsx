@@ -17,7 +17,7 @@ export function AboutContent() {
         <h3 className="text-2xl font-bold">Who I Am</h3>
         <div className="space-y-4 text-muted-foreground">
           <p>
-            I'm a Software Developer, Game Developer, and Cloud Engineer with a passion for creating innovative solutions that make a difference.
+            {"I'm a Software Developer, Game Developer, and Cloud Engineer with a passion for creating innovative solutions that make a difference."}
           </p>
           <p>
             With expertise in full-stack development, cloud architecture, and game development, I bring a unique perspective to every project.

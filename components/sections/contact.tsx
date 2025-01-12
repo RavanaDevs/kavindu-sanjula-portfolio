@@ -10,9 +10,9 @@ export function ContactSection() {
     <section id="contact" className="py-20 bg-theme-dark">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-8 animate-fade-in">Let's Connect</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 animate-fade-in">{"Let's Connect"}</h2>
           <p className="text-gray-300 mb-12 animate-fade-in">
-            I'm always interested in hearing about new projects and opportunities.
+            {"I'm always interested in hearing about new projects and opportunities."}
           </p>
           
           <div className="flex justify-center space-x-6 mb-12 animate-fade-in-up">
