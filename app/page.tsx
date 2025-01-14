@@ -5,8 +5,10 @@ import { SkillsSection } from '@/components/sections/skills/index';
 import { ProjectsSection } from '@/components/sections/projects/index';
 import { ContactSection } from '@/components/sections/contact';
 import { Footer } from '@/components/sections/footer';
+import { getProjects } from '@/lib/database';
 
 export default function Home() {
+  getProjects();
   return (
     <main className="min-h-screen bg-background">
       <Navigation />

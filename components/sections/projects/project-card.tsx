@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Github, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
-import type { Project } from './projects-data';
+import { Project } from '@/types/project';
 
 interface ProjectCardProps {
   project: Project;

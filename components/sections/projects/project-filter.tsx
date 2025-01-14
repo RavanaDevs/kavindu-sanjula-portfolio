@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import type { ProjectCategory } from './projects-data';
+import { ProjectCategory } from '@/types/project';
 
 interface ProjectFilterProps {
   selectedCategory: ProjectCategory | 'all';
