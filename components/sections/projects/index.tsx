@@ -1,17 +1,33 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { ProjectCard } from './project-card';
-import { ProjectFilter } from './project-filter';
-import { useState } from 'react';
-import { projectsData, ProjectCategory } from './projects-data';
+import { motion } from "framer-motion";
+import { ProjectCard } from "./project-card";
+import { ProjectFilter } from "./project-filter";
+import { useEffect, useState } from "react";
+import { ProjectCategory, Project } from "@/types/project";
 
 export function ProjectsSection() {
-  const [selectedCategory, setSelectedCategory] = useState<ProjectCategory | 'all'>('all');
+  const [selectedCategory, setSelectedCategory] = useState<
+    ProjectCategory | "all"
+  >("all");
+  const [projectsData, setProjectsData] = useState<Project[]>([]);
 
-  const filteredProjects = selectedCategory === 'all'
-    ? projectsData
-    : projectsData.filter(project => project.category === selectedCategory);
+  useEffect(() => {
+    (async () => {
+      try {
+        const res = await fetch("/api/projects");
+        const data = await res.json();
+        setProjectsData(data);
+      } catch (err) {
+        console.log(err);
+      }
+    })();
+  }, []);
+
+  const filteredProjects =
+    selectedCategory === "all"
+      ? projectsData
+      : projectsData.filter((project) => project.category === selectedCategory);
 
   return (
     <section id="projects" className="py-24">

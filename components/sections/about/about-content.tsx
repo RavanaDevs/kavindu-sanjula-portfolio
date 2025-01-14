@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Download } from 'lucide-react';
+import { downloadResume } from '@/lib/utils';
 
 export function AboutContent() {
   return (
@@ -26,7 +27,7 @@ export function AboutContent() {
             I believe in writing clean, maintainable code and creating intuitive user experiences that delight users.
           </p>
         </div>
-        <Button className="mt-6">
+        <Button className="mt-6" onClick={downloadResume}>
           <Download className="mr-2 h-4 w-4" />
           Download Resume
         </Button>

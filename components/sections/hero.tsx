@@ -1,15 +1,17 @@
-'use client';
+"use client";
 
-import { Button } from '@/components/ui/button';
-import { motion } from 'framer-motion';
-import { Download, ExternalLink } from 'lucide-react';
-import ParticlesContainer from '../particles-container';
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { Download, ExternalLink } from "lucide-react";
+import ParticlesContainer from "../particles-container";
+import Link from "next/link";
+import { downloadResume } from "@/lib/utils";
 
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <ParticlesContainer />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
@@ -39,11 +41,18 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button size="lg" className="min-w-[200px]">
-              <ExternalLink className="mr-2 h-4 w-4" />
-              View Projects
-            </Button>
-            <Button size="lg" variant="outline" className="min-w-[200px]">
+            <Link href="#projects">
+              <Button size="lg" className="min-w-[200px]">
+                <ExternalLink className="mr-2 h-4 w-4" />
+                View Projects
+              </Button>
+            </Link>
+            <Button
+              size="lg"
+              variant="outline"
+              className="min-w-[200px]"
+              onClick={downloadResume}
+            >
               <Download className="mr-2 h-4 w-4" />
               Download Resume
             </Button>
@@ -59,7 +68,7 @@ export function HeroSection() {
             duration: 0.5,
             delay: 0.6,
             repeat: Infinity,
-            repeatType: 'reverse',
+            repeatType: "reverse",
           }}
           className="text-muted-foreground text-sm"
         >
