@@ -8,14 +8,14 @@ export async function getProjects() {
     database_id: databaseId,
   });
 
-  const data = response.results.map((page) => {
+  const data = response.results.map((page: any) => {
     return {
       id: page.id,
       title: page.properties.title.title[0].plain_text,
       description: page.properties.short_desc.rich_text[0].plain_text,
       image: page.properties.image.files[0].file.url,
       technologies: page.properties.technologies.multi_select.map(
-        (item) => item.name
+        (item: any) => item.name
       ),
       category: page.properties.category.rich_text[0].plain_text,
       github: page.properties.github.rich_text[0].plain_text,
