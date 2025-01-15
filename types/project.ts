@@ -1,6 +1,7 @@
-export type ProjectCategory = 'web' | 'game' | 'cloud';
+export type ProjectCategory = "web" | "game" | "cloud";
 
 export interface Project {
+  id: string;
   title: string;
   description: string;
   image: string;
@@ -8,4 +9,5 @@ export interface Project {
   technologies: string[];
   github: string;
   demo: string;
+  publicUrl: string;
 }
