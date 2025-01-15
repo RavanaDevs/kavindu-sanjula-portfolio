@@ -3,6 +3,8 @@ import { fetchPages } from "@/lib/notion";
 import { PageObjectResponse } from "@notionhq/client/build/src/api-endpoints";
 import { NextRequest, NextResponse } from "next/server";
 
+export const dynamic = "force-static"
+
 export async function GET(req: NextRequest) {
   try {
     const pages = await fetchPages();
