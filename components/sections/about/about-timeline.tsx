@@ -4,21 +4,27 @@ import { motion } from 'framer-motion';
 
 const timeline = [
   {
-    year: '2023',
-    title: 'Senior Software Developer',
-    company: 'Tech Corp',
-    description: 'Leading development of enterprise applications',
-  },
-  {
-    year: '2021',
-    title: 'Cloud Engineer',
-    company: 'Cloud Solutions Inc',
+    year: '2024',
+    title: 'Freelance DevOps Engineer',
+    company: 'Xleron',
     description: 'Architecting cloud infrastructure and implementing DevOps practices',
   },
   {
+    year: '2023',
+    title: 'Freelance Web Developer',
+    company: 'Xleron | RavanaDevs | Pelwatte',
+    description: 'I worked on various web development projects',
+  },
+  {
+    year: '2022',
+    title: 'Undergraduate Student',
+    company: 'University of Sri Jayewardenepura',
+    description: 'Started my journey in Faculty of Technology',
+  },
+  {
     year: '2019',
-    title: 'Game Developer',
-    company: 'Game Studio',
+    title: 'Indie Game Developer',
+    company: 'RavanaDevs',
     description: 'Developing immersive gaming experiences',
   },
 ];

@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Kavindu Sanjula - Software Developer & Cloud Engineer',
   description: 'Professional portfolio of Kavindu Sanjula - Software Developer, Game Developer, and Cloud Engineer',
-  keywords: ['Software Developer', 'Game Developer', 'Cloud Engineer', 'Full Stack Developer'],
+  keywords: ['Software Developer', 'Game Developer', 'Cloud Engineer', 'Full Stack Developer']
 };
 
 export default function RootLayout({
