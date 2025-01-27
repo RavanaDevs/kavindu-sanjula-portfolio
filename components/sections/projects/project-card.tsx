@@ -34,7 +34,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         <div className="p-6">
           <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
           <p className="text-muted-foreground h-12 mb-4">
-            {project.description}
+            {project.description.length > 100 ? `${project.description.substring(0,100)} ...` : project.description}
           </p>
           <div className="flex flex-wrap gap-2 mb-4">
             {project.technologies.map((tech) => (
