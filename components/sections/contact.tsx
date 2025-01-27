@@ -50,25 +50,25 @@ export function ContactSection() {
 
                 <div className="flex justify-center space-x-6 mb-12 animate-fade-in-up">
                   <a
-                    href="#"
+                    href="https://github.com/ravanadevs"
                     className="w-12 h-12 rounded-full bg-theme-darker flex items-center justify-center text-theme-red hover:bg-theme-red hover:text-white transition-all duration-300 hover:scale-110"
                   >
                     <Github size={24} />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/kavindu-sanjula-802134294/"
                     className="w-12 h-12 rounded-full bg-theme-darker flex items-center justify-center text-theme-red hover:bg-theme-red hover:text-white transition-all duration-300 hover:scale-110"
                   >
                     <Linkedin size={24} />
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="w-12 h-12 rounded-full bg-theme-darker flex items-center justify-center text-theme-red hover:bg-theme-red hover:text-white transition-all duration-300 hover:scale-110"
                   >
                     <Twitter size={24} />
-                  </a>
+                  </a> */}
                   <a
-                    href="mailto:contact@example.com"
+                    href="mailto:ravanadevs@gmail.com"
                     className="w-12 h-12 rounded-full bg-theme-darker flex items-center justify-center text-theme-red hover:bg-theme-red hover:text-white transition-all duration-300 hover:scale-110"
                   >
                     <Mail size={24} />
