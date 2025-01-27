@@ -4,6 +4,7 @@ import { PageObjectResponse } from "@notionhq/client/build/src/api-endpoints";
 import { NextRequest, NextResponse } from "next/server";
 
 export const dynamic = "force-static"
+export const fetchCache = 'force-no-store';
 
 export async function GET(req: NextRequest) {
   try {
