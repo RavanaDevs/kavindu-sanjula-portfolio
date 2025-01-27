@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Kavindu Sanjula - Software Developer & Cloud Engineer',
   description: 'Professional portfolio of Kavindu Sanjula - Software Developer, Game Developer, and Cloud Engineer',
-  keywords: ['Software Developer', 'Game Developer', 'Cloud Engineer', 'Full Stack Developer']
+  keywords: ['Software Developer', 'Game Developer', 'Cloud Engineer', 'Full Stack Developer'],
 };
 
 export default function RootLayout({
@@ -19,6 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           {children}
